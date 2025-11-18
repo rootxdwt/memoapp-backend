@@ -49,7 +49,7 @@ def transcribe_audio():
     # Check if file is selected
     if audio_file.filename == '':
         return jsonify({'error': 'No file selected'}), 400
-
+    
     # Validate file type
     if not allowed_file(audio_file.filename):
         return jsonify({
