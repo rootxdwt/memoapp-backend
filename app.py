@@ -35,10 +35,9 @@ def transcribe_audio():
 
     Expects:
         - 'audio' file in multipart/form-data
-        - Optional 'include_timestamps' boolean parameter
 
     Returns:
-        - JSON with transcription text and optional sentence-level timestamps
+        - JSON with transcription text and sentence-level timestamps
     """
     # Check if audio file is present
     if 'audio' not in request.files:
